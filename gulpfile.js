@@ -6,11 +6,13 @@ var plumber      = require('gulp-plumber');
 var sourcemaps   = require('gulp-sourcemaps');
 var sass         = require('gulp-sass');
 var del          = require('del');
+var imagemin     = require('gulp-imagemin');
 
 // File paths
 var DIST_PATH    = 'dist';
 var SCSS_PATH    = 'src/scss/**/*.scss';
 var HTML_PATH    = './*.html';
+var IMAGES_PATH  = 'images/**/*.{png,jpeg,jpg,svg,gif}';
 
 // SASS
 gulp.task('styles', function() {
@@ -30,6 +32,20 @@ gulp.task('styles', function() {
              .pipe(sourcemaps.write())
              .pipe(gulp.dest(DIST_PATH))
              .pipe(livereload());
+});
+
+// Images
+gulp.task('images', function() {
+  console.log('Starting images task');
+
+  return gulp.src(IMAGES_PATH)
+             .pipe(imagemin([
+                 imagemin.gifsicle(),
+                 imagemin.jpegtran(),
+                 imagemin.optipng(),
+                 imagemin.svgo()
+               ]))
+             .pipe(gulp.dest(DIST_PATH + '/images'));
 });
 
 // HTML
@@ -55,7 +71,7 @@ gulp.task('clean', function() {
 });
 
 // Default
-gulp.task('default', ['clean', 'styles', 'html'], function() {
+gulp.task('default', ['clean', 'images', 'styles', 'html'], function() {
   console.log('Starting default task');
 });
 
