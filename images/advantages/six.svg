@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="80px" viewBox="0 0 49 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>3C2C0C50-6054-4109-B7C3-AB306D5D6845</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="3.17686299%" fx="0%" fy="3.17686299%" r="139.193103%" gradientTransform="translate(0.000000,0.031769),scale(1.000000,0.611026),rotate(57.745026),translate(-0.000000,-0.031769)" id="radialGradient-1">
+            <stop stop-color="#4FC3F7" offset="0%"></stop>
+            <stop stop-color="#AB5CA4" offset="49.4937365%"></stop>
+            <stop stop-color="#FF512F" offset="100%"></stop>
+        </radialGradient>
+        <path d="M0.577777778,51.6764487 C0.577777778,39.3345509 4.57074471,27.9606451 12.1936816,19.6117142 C20.7846104,10.1737924 34.4574972,2.6718545 44.621413,0.00987654321 C45.710404,0.00987654321 46.073401,2.7928535 46.073401,3.51884748 C35.9094852,6.78582043 17.8806345,14.5297563 12.4356796,35.9465789 C16.6706445,32.437608 22.5995954,30.501624 26.7135613,30.501624 C43.6534211,30.501624 48.856378,45.0215038 48.856378,53.7334316 C48.856378,67.2853194 38.0874672,79.0222222 24.2935814,79.0222222 C9.65270263,79.0222222 0.577777778,64.7443405 0.577777778,51.6764487 Z M10.9836916,49.4984667 C10.9836916,60.3883765 15.5816535,75.0292553 25.2615734,75.0292553 C32.8845102,75.0292553 38.5714631,66.9223224 38.5714631,56.0324126 C38.5714631,45.7474978 34.2154992,36.4305749 23.3255894,36.4305749 C19.8166185,36.4305749 15.4606545,36.9145709 11.4676876,41.2705349 C11.1046906,43.8115138 10.9836916,46.5944908 10.9836916,49.4984667 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-page-1" transform="translate(-1165.000000, -1399.000000)">
+            <g id="Features" transform="translate(65.000000, 795.000000)">
+                <g id="Group-14" transform="translate(800.000000, 424.000000)">
+                    <g id="Bitmap-+-Rectangle-7-Mask" transform="translate(300.000000, 180.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill-opacity="0.819999993" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+                        <rect id="Rectangle-7" fill="#FFFFFF" opacity="0.4" mask="url(#mask-3)" x="-15.4020687" y="-7.90123457" width="73.3177622" height="97.519742"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

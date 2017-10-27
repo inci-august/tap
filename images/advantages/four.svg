@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="80px" viewBox="0 0 55 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>E6A7BD51-E139-494A-B1E9-D9E61BDE3263</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="3.17686299%" fx="0%" fy="3.17686299%" r="139.193103%" gradientTransform="translate(0.000000,0.031769),scale(1.000000,0.683077),rotate(54.797439),translate(-0.000000,-0.031769)" id="radialGradient-1">
+            <stop stop-color="#4FC3F7" offset="0%"></stop>
+            <stop stop-color="#AB5CA4" offset="49.4937365%"></stop>
+            <stop stop-color="#FF512F" offset="100%"></stop>
+        </radialGradient>
+        <path d="M0.482142857,55.1357143 L40.0678571,3.40714286 C40.7964286,2.43571429 42.7392857,0.371428571 43.7107143,0.371428571 C44.925,0.371428571 45.5321429,1.58571429 45.5321429,2.55714286 L45.5321429,50.5214286 L52.6964286,50.5214286 C53.425,50.5214286 54.3964286,52.95 54.3964286,55.5 C54.3964286,56.5928571 54.1535714,57.0785714 53.9107143,57.4428571 L45.5321429,57.4428571 L45.5321429,78.6928571 C45.5321429,78.6928571 45.0464286,79.3 40.3107143,79.3 C37.3964286,79.3 35.9392857,79.1785714 35.9392857,78.3285714 L35.9392857,57.4428571 L1.69642857,57.4428571 C0.846428571,56.9571429 0.482142857,55.8642857 0.482142857,55.1357143 Z M8.73928571,50.5214286 L35.9392857,50.5214286 L35.9392857,14.9428571 L8.73928571,50.5214286 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-page-1" transform="translate(-360.000000, -1399.000000)">
+            <g id="Features" transform="translate(65.000000, 795.000000)">
+                <g id="Group-12" transform="translate(0.000000, 424.000000)">
+                    <g id="Bitmap-+-Rectangle-7-Mask" transform="translate(295.000000, 180.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill-opacity="0.819999993" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+                        <rect id="Rectangle-7" fill="#FFFFFF" opacity="0.4" mask="url(#mask-3)" x="-2.14285714" y="-7.14285714" width="73.5714286" height="97.8571429"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

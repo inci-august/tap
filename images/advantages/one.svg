@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="80px" viewBox="0 0 38 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>BAA00B8F-9CDC-42C6-B45B-AE8774561534</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="3.17686299%" fx="0%" fy="3.17686299%" r="139.193103%" gradientTransform="translate(0.000000,0.031769),scale(1.000000,0.475000),rotate(63.868114),translate(-0.000000,-0.031769)" id="radialGradient-1">
+            <stop stop-color="#4FC3F7" offset="0%"></stop>
+            <stop stop-color="#AB5CA4" offset="49.4937365%"></stop>
+            <stop stop-color="#FF512F" offset="100%"></stop>
+        </radialGradient>
+        <path d="M12.9486123,61.576507 C12.9486123,66.8933539 12.9486123,70.7264297 11.9728314,73.1993818 C11.3629684,74.8068006 5.75222831,75.301391 4.16658437,75.4250386 C3.55672132,76.2905719 3.67869393,79.2581144 4.16658437,80 C8.92351618,79.5054096 15.7539824,79.1344668 20.876832,79.1344668 C25.9996816,79.1344668 32.8301478,79.5054096 37.5870796,80 C38.0749701,79.2581144 38.1969427,76.2905719 37.5870796,75.4250386 C36.0014357,75.301391 30.3906956,74.8068006 29.7808326,73.1993818 C28.8050517,70.7264297 28.8050517,66.8933539 28.8050517,61.576507 L28.8050517,13.9721793 C28.8050517,5.93508501 29.9028052,2.34930448 29.9028052,2.34930448 C29.7808326,1.73106646 29.1709695,0 28.4391338,0 L28.1951886,0 C27.8292708,0 14.290311,6.30602782 0.263460839,12.3647604 C-0.102456993,12.488408 0.0195156177,13.6012365 0.0195156177,13.8485317 C0.0195156177,14.5904173 0.62937867,15.7032457 1.60515955,16.1978362 C4.16658437,14.7140649 9.28943401,13.3539413 10.3871875,13.3539413 C12.3387493,13.3539413 12.9486123,14.4667697 12.9486123,19.9072643 L12.9486123,61.576507 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-page-1" transform="translate(-377.000000, -1068.000000)">
+            <g id="Features" transform="translate(65.000000, 795.000000)">
+                <g id="Быстро" transform="translate(0.000000, 93.000000)">
+                    <g id="Bitmap" transform="translate(312.000000, 180.000000)">
+                        <g>
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <use id="Mask" fill-opacity="0.819999993" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+                            <rect id="Rectangle-7" fill="#FFFFFF" opacity="0.4" mask="url(#mask-3)" x="-8" y="-5" width="74" height="100"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
