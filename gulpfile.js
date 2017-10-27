@@ -16,7 +16,7 @@ var HTML_PATH    = './*.html';
 gulp.task('styles', function() {
   console.log('Starting styles task');
 
-  return gulp.src(['src/scss/*.scss'])
+  return gulp.src(SCSS_PATH)
              .pipe(plumber(function(err) {
                console.log('Styles Task Error!');
                console.log(err);
