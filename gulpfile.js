@@ -25,7 +25,9 @@ gulp.task('styles', function() {
                this.emit('end');
              }))
              .pipe(sourcemaps.init())
-             .pipe(autoprefixer())
+             .pipe(autoprefixer({
+               browsers: ['last 5 versions', 'ie >= 7']
+              }))
              .pipe(sass({
                outputStyle: 'compressed'
              }))

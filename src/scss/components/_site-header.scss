@@ -1,0 +1,73 @@
+.site-header {
+  background: $dark-bg;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+
+  &__nav {
+    a {
+      vertical-align: middle;
+      margin-right: 1rem;
+      transition: color .2s ease-in-out;
+
+      &:hover {
+        color: $pinkish-orange;
+      }
+    }
+
+    .home {
+      padding-left: 0;
+
+      .icon--home {
+        background-image: url('./images/header/home.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 0.875rem;
+        width: 0.875rem;
+        float: left;
+        margin-right: 6px;
+      }
+    }
+
+    .ad {
+      font-weight: 600;
+    }
+  }
+
+  .social {
+    &__icon {
+      display: inline-block;
+      vertical-align: middle;
+      height: 23px;
+      width: 22px;
+      margin: 0 5px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      transition: transform .2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &__icon--instagram {
+      background-image: url('./images/social-icons/instagram.svg');
+    }
+
+    &__icon--facebook {
+      background-image: url('./images/social-icons/facebook.svg');
+    }
+
+    &__icon--ios {
+      background-image: url('./images/social-icons/ios.svg');
+    }
+
+    &__icon--android {
+      background-image: url('./images/social-icons/android.svg');
+    }
+
+    &__support {
+      font-weight: 600;
+      margin-left: 1rem;
+    }
+  }
+}
