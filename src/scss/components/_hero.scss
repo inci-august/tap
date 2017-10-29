@@ -1,0 +1,55 @@
+.hero {
+  position: relative;
+
+  &__image {
+    margin-top: -3px;
+    min-width: 100%;
+  }
+
+  .row {
+    width: 1170px;
+    position: absolute;
+    top: 36px;
+
+    .primary-nav {
+      padding-top: 1rem;
+
+      li {
+        display: inline-block;
+        margin-left: 2rem;
+
+        a {
+          text-decoration: none;
+          font-size: 0.9375rem;
+
+          &:hover {
+            border-bottom: 1px solid #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &__text-content {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-55%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 2.75rem;
+    font-weight: 600;
+  }
+
+  &__description {
+    margin: 36px 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0 18rem;
+    line-height: 1.8rem;
+  }
+}
