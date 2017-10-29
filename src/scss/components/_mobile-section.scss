@@ -20,8 +20,8 @@
   }
 
   &__text-content {
-    width: 60%;
-    padding: 10rem 7rem;
+    width: 80%;
+    padding: 10rem 6rem;
   }
 
   &__title {
@@ -38,6 +38,10 @@
   }
 
   &__img {
-    width: 50%;
+    width: 100%;
+
+    img {
+      display: block;
+    }
   }
 }
