@@ -1,0 +1,114 @@
+.advantages {
+
+  &__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: $pinkish-orange;
+    margin: 2.8125rem 0;
+  }
+
+  .advantage-item {
+    position: relative;
+    width: 31%;
+    height: 280px;
+    padding:  30px 35px;
+    margin-bottom: 35px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(to bottom, #4fc3f7, #ab5ca4 49%, #ff512f);
+    border-image-slice: 1;
+
+    &:after {
+      display: table;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      content: "";
+      position: absolute;
+      border: 2px dotted #fff;
+    }
+
+    &__title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.56;
+      color: $dark-heading;
+
+      .icon {
+        display: inline-block;
+        margin-right: 1rem;
+        vertical-align: middle;
+        height: 38px;
+        width: 47px;
+
+        &--stopwatch {
+          background: url(./images/advantages/stopwatch.svg) no-repeat;
+        }
+
+        &--check {
+          background: url(./images/advantages/check.svg) no-repeat;
+        }
+
+        &--purse {
+          background: url(./images/advantages/purse.svg) no-repeat;
+        }
+
+        &--portfolio {
+          background: url(./images/advantages/portfolio.svg) no-repeat;
+        }
+
+        &--star {
+          background: url(./images/advantages/star.svg) no-repeat;
+        }
+
+        &--hand {
+          background: url(./images/advantages/hand.svg) no-repeat;
+        }
+      }
+    }
+
+    &__description {
+      padding: 1rem 0;
+      font-size: 1.12rem;
+      line-height: 1.56;
+      color: $main-text;
+    }
+
+    &__num {
+      position: absolute;
+      right: 10px;
+      bottom: 12px;
+      vertical-align: middle;
+      height: 84px;
+      width: 55px;
+
+      &--one {
+        background: url(./images/advantages/one.svg) no-repeat;
+      }
+
+      &--two {
+        background: url(./images/advantages/two.svg) no-repeat;
+      }
+
+      &--three {
+        background: url(./images/advantages/three.svg) no-repeat;
+      }
+
+      &--four {
+        background: url(./images/advantages/four.svg) no-repeat;
+      }
+
+      &--five {
+        background: url(./images/advantages/five.svg) no-repeat;
+      }
+
+      &--six {
+        background: url(./images/advantages/six.svg) no-repeat;
+      }
+    }
+  }
+}
