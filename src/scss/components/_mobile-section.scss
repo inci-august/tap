@@ -1,0 +1,43 @@
+.mobile-version {
+  position: relative;
+  background: $light-bg;
+  padding-top: 10rem;
+
+  &:before {
+    z-index: 1;
+    content: "";
+    display: "table";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background: #fff;
+    transform: skewY(-4deg);
+    transform-origin: top left;
+  }
+
+  &__text-content {
+    width: 60%;
+    padding: 10rem 7rem;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    line-height: 1.22;
+    margin-bottom: 35px;
+    color: $dark-heading;
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    line-height: 1.56;
+    color: $main-text;
+  }
+
+  &__img {
+    width: 50%;
+  }
+}
