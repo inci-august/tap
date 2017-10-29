@@ -1,0 +1,53 @@
+.create-store {
+  background-image: radial-gradient(circle at 0 3%, #4fc3f7, #ab5ca4 49%, #ff512f);
+  color: #fff;
+  padding: 70px 0;
+  position: relative;
+  top: -5rem;
+
+  .row {
+    padding: 0 3rem;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+  }
+
+  .create-store-item {
+    max-width: 230px;
+    margin: 5rem 0;
+
+    &__number {
+      font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+      font-size: 8rem;
+      font-weight: 200;
+
+      .icon {
+        display: inline-block;
+        margin-right: 1rem;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+
+        &--phone {
+          background: #fff url(./images/create-store/phone.svg) center no-repeat;
+        }
+
+        &--package {
+          background: #fff url(./images/create-store/package.svg) center no-repeat;
+        }
+
+        &--survey {
+          background: #fff url(./images/create-store/survey.svg) center no-repeat;
+        }
+      }
+    }
+
+    &__description {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.56;
+      padding: 1rem 0;
+    }
+  }
+}
