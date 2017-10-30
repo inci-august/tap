@@ -159,29 +159,31 @@
         <h2 class="contacts__title">Свяжитесь с нами</h2>
 
         <form id="contact-form" class="contact-form">
-          <div class="row">
-            <input type="text" placeholder="Ad">
-            <input type="tel" placeholder="Mobil nömrə">
-          </div> <!-- /.row -->
-          <div class="row">
-            <input type="text" placeholder="Soyad">
-            <input type="email" placeholder="E-mail">
-          </div> <!-- /.row -->
+          <div class="contact-form__content">
+            <div class="row">
+              <input type="text" placeholder="Ad">
+              <input type="tel" placeholder="Mobil nömrə">
+            </div> <!-- /.row -->
+            <div class="row">
+              <input type="text" placeholder="Soyad">
+              <input type="email" placeholder="E-mail">
+            </div> <!-- /.row -->
+          </div> <!-- /.contact-form__content -->
           <div class="contact-form__footer">
-            <input type="submit" id="contact-form-submit" class="btn btn--blue" value="Göndər">
+            <button type="submit" id="contact-form-submit" class="btn btn--blue btn--small btn--glowy">Göndər <span class="slant-right"></span></button>
           </div>
         </form>
       </div> <!-- /.wrapper -->
     </section> <!-- /#contacts-section -->
 
     <!-- FOOTER SECTION -->
-    <footer id="site-footer">
+    <footer class="site-footer">
       <div class="wrapper">
         <div class="row">
           <div class="site-footer__about">
             <a href="#">Haqqımızda</a>
             <p>2013-2017 Tap.az</p>
-            <div class="contacts">
+            <div class="site-footer__contacts">
               <a href="mailto:tap@tap.az">tap@tap.az</a>
               <a href="tel:0125990805">Dəstək: (012) 599-08-05</a>
             </div> <!-- /.contacts-->
@@ -208,7 +210,7 @@
           </div> <!-- /.site-footer__counters -->
         </div> <!-- /.row -->
       </div> <!-- /.wrapper -->
-    </footer> <!-- /#site-footer -->
+    </footer> <!-- /.site-footer -->
 
   </div> <!-- /.container -->
 

@@ -2,16 +2,66 @@
   color: #FFF;
   text-decoration: none;
   display: inline-block;
+  border: none;
   border-radius: 100px;
+  transition: all .2s linear;
+  cursor: pointer;
 
   &--orange {
     background-color: $pinkish-orange;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.25);
+
+    &:hover {
+      background-color: darken($pinkish-orange, 6%);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+    }
   }
 
   &--large {
     padding: 1rem 2.1rem;
     font-size: 1.75rem;
     font-weight: 600;
+  }
+
+  &--blue {
+    background-color: $aqua-blue;
+  }
+
+  &--small {
+    padding: .7rem 4rem .5rem 2rem;
+    font-size: 18px;
+  }
+
+  &--glowy {
+    position: relative;
+    overflow: hidden;
+
+    .slant-right {
+      position: absolute;
+      background: lighten($aqua-blue, 10%);
+      bottom: 0;
+      right: -3px;
+      font-size: 2rem;
+      width: 2.3rem;
+      height: 100%;
+      transform: skew(-14deg);
+      transition: all .3s ease-in-out;
+
+      &:after {
+        position: absolute;
+        content: '\203A';
+        display: table;
+        top: 0;
+        right: 1rem;
+        transform: skew(14deg);
+      }
+    }
+
+    &:hover {
+      .slant-right {
+        background: transparent;
+        width: 100%;
+      }
+    }
   }
 }

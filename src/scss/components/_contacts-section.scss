@@ -1,0 +1,39 @@
+.contacts {
+  background: $light-bg;
+  padding: 42px;
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .contact-form {
+    margin: 42px;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08);
+
+    &__content {
+      background: #fff;
+      padding: 80px 80px 0 80px;
+
+      input {
+        height: 50px;
+        padding: 14px 15px;
+        width: 44%;
+        border: 1px solid darken($light-bg, 10%);
+        color: $main-text;
+        border-radius: 3px;
+        margin-bottom: 42px;
+
+        &::placeholder {
+          color: darken($light-bg, 20%);
+        }
+      }
+    }
+
+    &__footer {
+      padding: 20px 80px;
+      border-top: 1px solid darken($light-bg, 10%);
+      text-align: right;
+    }
+  }
+}
