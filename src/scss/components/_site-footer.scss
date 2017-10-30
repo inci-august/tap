@@ -1,0 +1,35 @@
+.site-footer {
+  background: $darker-bg;
+  color: $main-text;
+  padding: 1.3rem;
+  font-size: .9rem;
+  line-height: 1.5;
+
+  .row {
+    justify-content: space-around;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .sites {
+    margin-top: 12px;
+    .site-icon {
+      display: inline-block;
+      width: 7rem;
+      height: 2.2rem;
+
+      &--boss {
+        background: #f8cb1b url(./images/footer/boss.png) no-repeat center;
+      }
+    }
+  }
+
+  &__ads-info {
+    line-height: 1.8rem;
+    a {
+      font-weight: bold;
+    }
+  }
+}
