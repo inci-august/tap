@@ -25,13 +25,13 @@ gulp.task('styles', function() {
                this.emit('end');
              }))
              .pipe(sourcemaps.init())
-             .pipe(autoprefixer({
-               browsers: ['last 5 versions', 'ie >= 7']
-              }))
              .pipe(sass({
                outputStyle: 'compressed'
-             }))
-             .pipe(sourcemaps.write())
+              }))
+              .pipe(sourcemaps.write())
+              .pipe(autoprefixer({
+                browsers: ['last 5 versions', 'ie >= 7']
+              }))
              .pipe(gulp.dest(DIST_PATH))
              .pipe(livereload());
 });

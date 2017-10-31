@@ -4,6 +4,11 @@
   padding: 1.3rem;
   font-size: .9rem;
   line-height: 1.5;
+  text-align: center;
+
+  @include atSmall {
+    text-align: left;
+  }
 
   .row {
     justify-content: space-around;
@@ -11,6 +16,15 @@
 
   a {
     color: inherit;
+  }
+
+  &__about {
+    margin-bottom: 1rem;
+    min-width: 200px;
+
+    @include atSmall {
+      margin-bottom: 0;
+    }
   }
 
   .sites {
@@ -27,9 +41,27 @@
   }
 
   &__ads-info {
-    line-height: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+
+    @include atSmall{
+      text-align: left;
+    }
+
+    @include atMedium {
+      line-height: 1.8;
+    }
+
     a {
       font-weight: bold;
+    }
+  }
+
+  &__counters {
+    display: none;
+
+    @include atMedium {
+      display: block;
     }
   }
 }
