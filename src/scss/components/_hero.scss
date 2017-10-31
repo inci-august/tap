@@ -1,22 +1,56 @@
 .hero {
   position: relative;
+  background: $aqua-blue;
 
-  &__image {
-    margin-top: -3px;
+  @include atMedium {
+    background: transparent;
+  }
+
+  .site-logo {
+    margin: 1rem auto;
+    text-align: center;
+
+    @include atMedium {
+      margin: 0;
+    }
+  }
+
+  picture {
     min-width: 100%;
   }
 
+  &__image {
+    display: none;
+
+    @include atMedium{
+      margin-top: -3px;
+      display: block;
+    }
+  }
+
   .row {
-    width: 1170px;
-    position: absolute;
-    top: 36px;
+    flex-direction: column;
+
+    @include atMedium {
+      flex-direction: row;
+      position: absolute;
+      top: 36px;
+    }
 
     .primary-nav {
       padding-top: 1rem;
 
+      ul {
+        text-align: center;
+      }
+
       li {
-        display: inline-block;
-        margin-left: 2rem;
+        margin-bottom: 12px;
+
+        @include atMedium {
+          display: inline-block;
+          margin-left: 2rem;
+        }
 
         a {
           text-decoration: none;
@@ -31,25 +65,61 @@
   }
 
   &__text-content {
-    position: absolute;
-    top: 45%;
-    transform: translateY(-55%);
-    left: 0;
     width: 100%;
     text-align: center;
+    padding: 35px 20px;
     color: #fff;
+
+    @include atMedium {
+      padding: 0;
+      position: absolute;
+      left: 0;
+      top: 45%;
+      transform: translateY(-45%);
+    }
+
+    @include atLarge {
+      transform: translateY(-55%);
+    }
   }
 
   &__title {
-    font-size: 2.75rem;
+    font-size: 1.4rem;
     font-weight: 600;
+
+    @include atSmall {
+      font-size: 2rem;
+    }
+
+    @include atMedium {
+      font-size: 2.4rem;
+    }
+
+    @include atLarge {
+      font-size: 2.75rem;
+    }
   }
 
   &__description {
-    margin: 36px 0;
-    font-size: 1.25rem;
+    margin: 16px auto;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 0 18rem;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
+    width: 90%;
+
+    @include atSmall {
+      width: 70%;
+    }
+
+    @include atMedium {
+      font-size: 1.1rem;
+    }
+
+    @include atLarge {
+      line-height: 1.8rem;
+      margin: 36px auto;
+      font-size: 1.25rem;
+      width: 50%;
+    }
   }
 }

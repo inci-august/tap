@@ -1,26 +1,44 @@
 .advantages {
 
+  .row {
+    flex-wrap: wrap;
+
+    @include atMedium {
+      flex-wrap: nowrap;
+    }
+  }
+
   &__title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-align: center;
     color: $pinkish-orange;
-    margin: 2.8125rem 0;
+    line-height: 1.5;
+    margin: 2rem 0;
+
+    @include atSmall {
+      font-size: 1.6rem;
+    }
+
+    @include atMedium {
+      margin: 2.8rem 0;
+      font-size: 2rem;
+    }
+
+    @include atLarge {
+      font-size: 2.5rem;
+    }
   }
 
   .advantage-item {
     z-index: 4;
     position: relative;
-    width: 31%;
-    height: 280px;
-    padding:  30px 35px;
-    margin-bottom: 35px;
+    width: 90%;
+    padding:  18px 35px;
+    margin: 0 auto;
     border-radius: 3px;
-    border-style: solid;
-    border-width: 1px;
-    border-image-source: linear-gradient(to bottom, #4fc3f7, #ab5ca4 49%, #ff512f);
-    border-image-slice: 1;
+    text-align: left;
 
     &:after {
       display: table;
@@ -33,83 +51,140 @@
       border: 2px dotted #fff;
     }
 
+    @include atSmall {
+      padding:  25px 30px;
+      height: 150px;
+      margin-bottom: 35px;
+      border-style: solid;
+      border-width: 1px;
+      border-image-source: linear-gradient(to bottom, #4fc3f7, #ab5ca4 49%, #ff512f);
+      border-image-slice: 1;
+    }
+
+    @include atMedium {
+      padding:  30px 35px;
+      height: 260px;
+      width: 31%;
+    }
+
+    @include atLarge {
+      height: 280px;
+    }
+
     &__title {
-      font-size: 1.125rem;
       font-weight: 600;
       line-height: 1.56;
       color: $dark-heading;
+      text-align: center;
+
+      @include atMedium {
+        text-align: left;
+      }
+
+      @include atLarge {
+        font-size: 1.125rem;
+      }
 
       .icon {
-        display: inline-block;
-        margin-right: 1rem;
-        vertical-align: middle;
+        display: block;
         height: 38px;
         width: 47px;
+        margin: 0 auto 1rem auto;
+        position: static;
+
+        @include atSmall {
+          position: absolute;
+          top: 45%;
+        }
+
+        @include atMedium {
+          position: static;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 1rem 0 0;
+        }
 
         &--stopwatch {
-          background: url(./images/advantages/stopwatch.svg) no-repeat;
+          background: url(./images/advantages/stopwatch.svg)  center center no-repeat;
         }
 
         &--check {
-          background: url(./images/advantages/check.svg) no-repeat;
+          background: url(./images/advantages/check.svg)  center center no-repeat;
         }
 
         &--purse {
-          background: url(./images/advantages/purse.svg) no-repeat;
+          background: url(./images/advantages/purse.svg)  center center no-repeat;
         }
 
         &--portfolio {
-          background: url(./images/advantages/portfolio.svg) no-repeat;
+          background: url(./images/advantages/portfolio.svg)  center center no-repeat;
         }
 
         &--star {
-          background: url(./images/advantages/star.svg) no-repeat;
+          background: url(./images/advantages/star.svg)  center center no-repeat;
         }
 
         &--hand {
-          background: url(./images/advantages/hand.svg) no-repeat;
+          background: url(./images/advantages/hand.svg)  center center no-repeat;
         }
       }
     }
 
     &__description {
-      padding: 1rem 0;
-      font-size: 1.12rem;
+      padding: 1rem 0 0 0;
       line-height: 1.56;
       color: $main-text;
-    }
+      font-size: .9rem;
+      text-align: center;
 
-    &__num {
-      position: absolute;
-      right: 10px;
-      bottom: 12px;
-      vertical-align: middle;
-      height: 84px;
-      width: 55px;
-
-      &--one {
-        background: url(./images/advantages/one.svg) no-repeat;
+      @include atSmall {
+        padding-left: 70px;
+        text-align: left;
       }
 
-      &--two {
-        background: url(./images/advantages/two.svg) no-repeat;
+      @include atMedium {
+        padding-left: 0;
       }
 
-      &--three {
-        background: url(./images/advantages/three.svg) no-repeat;
-      }
-
-      &--four {
-        background: url(./images/advantages/four.svg) no-repeat;
-      }
-
-      &--five {
-        background: url(./images/advantages/five.svg) no-repeat;
-      }
-
-      &--six {
-        background: url(./images/advantages/six.svg) no-repeat;
+      @include atLarge {
+        font-size: 1.12rem;
       }
     }
+
+    @include atMedium {
+      &__num {
+        position: absolute;
+        right: 10px;
+        bottom: 12px;
+        vertical-align: middle;
+        height: 84px;
+        width: 55px;
+
+        &--one {
+          background: url(./images/advantages/one.svg) no-repeat;
+        }
+
+        &--two {
+          background: url(./images/advantages/two.svg) no-repeat;
+        }
+
+        &--three {
+          background: url(./images/advantages/three.svg) no-repeat;
+        }
+
+        &--four {
+          background: url(./images/advantages/four.svg) no-repeat;
+        }
+
+        &--five {
+          background: url(./images/advantages/five.svg) no-repeat;
+        }
+
+        &--six {
+          background: url(./images/advantages/six.svg) no-repeat;
+        }
+      }
+    }
+
   }
 }

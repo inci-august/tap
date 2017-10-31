@@ -1,7 +1,11 @@
 .mobile-version {
   position: relative;
   background: $light-bg;
-  padding-top: 8rem;
+  padding-top: 6rem;
+
+  @include atMedium {
+    padding-top: 8rem;
+  }
 
   &:before {
     z-index: 1;
@@ -21,27 +25,73 @@
 
   &__text-content {
     width: 80%;
-    padding: 12rem 6rem;
+    padding: 3.8rem 1rem;
+    margin: 0 auto;
+
+    @include atSmall {
+      padding: 3.8rem 3rem;
+    }
+
+    @include atMedium {
+      padding: 10rem 6rem;
+    }
+
+    @include atLarge {
+      padding: 12rem 6rem;
+    }
   }
 
   &__title {
-    font-size: 2.25rem;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.2rem;
     line-height: 1.22;
     margin-bottom: 35px;
     color: $dark-heading;
+    text-align: center;
+
+    @include atSmall {
+      font-size: 1.5rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    @include atMedium {
+      font-size: 1.8rem;
+    }
+
+    @include atLarge {
+      font-size: 2.25rem;
+    }
   }
 
   &__description {
-    font-size: 1.125rem;
+    font-size: 0.9rem;
     line-height: 1.56;
     color: $main-text;
+
+    @include atMedium {
+      font-size: 1.05rem;
+    }
+
+    @include atLarge {
+      font-size: 1.125rem;
+    }
   }
 
   &__img {
-    width: 100%;
+    width: 80%;
+
+    @include atLarge {
+      width: 100%;
+    }
 
     img {
-      display: block;
+      display: none;
+
+      @include atSmall {
+        display: block;
+      }
     }
   }
 }

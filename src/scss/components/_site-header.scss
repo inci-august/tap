@@ -3,13 +3,29 @@
   font-size: 0.875rem;
   padding: 0.5rem;
 
+  .row {
+    flex-direction: column;
+    text-align: center;
+
+    @include atMedium {
+      flex-direction: row;
+    }
+  }
+
   &__nav {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+
+    @include atMedium {
+      margin-bottom: 0;
+    }
+
     a {
       vertical-align: middle;
       margin-right: 1rem;
       transition: color .2s ease-in-out;
 
-      &:hover {
+      &:hover, &:focus {
         color: $pinkish-orange;
       }
     }
@@ -44,7 +60,7 @@
       background-position: center center;
       transition: transform .2s ease-in-out;
 
-      &:hover {
+      &:hover, &:focus {
         transform: scale(1.1);
       }
     }

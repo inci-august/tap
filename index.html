@@ -36,12 +36,16 @@
 
     <!-- HERO SECTION -->
     <section class="hero">
-      <img class="hero__image" src="./dist/images/hero/hero-bg.svg">
+      <picture>
+        <source srcset="./dist/images/hero/hero-bg--large.png 1920w" media="(min-width: 1266px)">
+        <source srcset="./dist/images/hero/hero-bg--medium.png 1380w" media="(min-width: 1024px)">
+        <img srcset="./dist/images/hero/hero-bg--small.png 640w" alt="tap.az store" class="hero__image">
+      </picture>
 
       <div class="wrapper">
         <div class="row">
           <div class="site-logo">
-            <img src="./dist/images/hero/logo.svg" alt="">
+            <a href="index.html"><img src="./dist/images/hero/logo.svg" alt=""></a>
           </div> <!-- /.site-logo -->
 
           <nav class="primary-nav">
@@ -58,7 +62,7 @@
         <div class="hero__text-content">
           <h1 class="hero__title">Создайте собственный онлайн-магазин</h1>
           <p class="hero__description">
-              Продавайте лучше, больше и быстрее. Больше просмотров – больше покупателей – <br> больше прибыли с собственным онлайн-магазином на Tap.az
+              Продавайте лучше, больше и быстрее. Больше просмотров – больше покупателей – больше прибыли с собственным онлайн-магазином на Tap.az
           </p>
           <a href="#" class="btn btn--large btn--orange">Открыть магазин</a>
         </div> <!-- /.hero__text-content -->
@@ -137,17 +141,17 @@
         <div class="row">
           <div class="create-store-item">
             <p class="create-store-item__number"><span class="icon icon--phone"></span>1</p>
-            <p class="create-store-item__description">Свяжитесь с нами<br>+994 55 575 57 57</p>
+            <a href="#"><p class="create-store-item__description">Свяжитесь с нами<br>+994 55 575 57 57</p></a>
           </div> <!-- /.create-store-item -->
 
           <div class="create-store-item">
             <p class="create-store-item__number"><span class="icon icon--package"></span>2</p>
-            <p class="create-store-item__description">Выберите подходящий вам пакет услуг</p>
+            <a href="#"><p class="create-store-item__description">Выберите подходящий вам пакет услуг</p></a>
           </div> <!-- /.create-store-item -->
 
           <div class="create-store-item">
             <p class="create-store-item__number"><span class="icon icon--survey"></span>3</p>
-            <p class="create-store-item__description">Заполните анкету</p>
+            <a href="#"><p class="create-store-item__description">Заполните анкету</p></a>
           </div> <!-- /.create-store-item -->
         </div> <!-- /.row -->
       </div> <!-- /.wrapper -->

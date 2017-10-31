@@ -1,4 +1,19 @@
 .row {
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+
+  @include atSmall {
+    flex-direction: row;
+    width: 620px;
+    justify-content: space-between;
+  }
+
+  @include atMedium {
+    width: 990px;
+  }
+
+  @include atLarge {
+    width: 1170px;
+  }
 }
